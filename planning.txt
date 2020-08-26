@@ -1,0 +1,22 @@
+Website Planner
+
+Goal of website: resume/business site for mechanical design
+
+Sections of website:
+(1) Header, introduce myself
+    "hi, my name is Jared and I work with robotics
+(2) Projects
+    - Make modular
+(3) Resume
+    - make easily uploadable and editable
+(4) Contact 
+    - Social sites (twitter, linkedin, email)
+    - Alberta Canada
+
+Goals: 
+- Have a working website by Sunday August 30th
+- Keep it simple
+
+How:
+- Use css grid, html, and some javscript (leave JS till later)
+- deploy using github
