@@ -1,1 +1,62 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jared's Website</title>
+  <style>
+
+    body {
+      margin:0;
+    }
+
+    #header {
+      display:grid;
+      grid-template-columns:100%;
+    }
+    .img {
+      max-width:100%;
+      max-height:100%;
+      margin:0;
+    }
+    .grid {
+      display:grid;
+      grid-template-columns: 20% 30% 40%;
+    }
+    .grid > div{
+      background:#eee;
+      padding:1em;
+    }
+    .grid > div:nth-child(odd){
+      background: #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header">
+    <img src="images/landingShot.jpg" alt="Picture of Jared Schroeder" class="img">
+  </div>
+  <div class="grid">
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sapiente deleniti
+      dolores voluptates recusandae, vel voluptatum cupiditate labore assumenda
+      officia!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
+      tempore!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sapiente deleniti
+      dolores voluptates recusandae, vel voluptatum cupiditate labore assumenda
+      officia!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
+      tempore!
+    </div>
+  </div>
+</body>
+
+</html>
