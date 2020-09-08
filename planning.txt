@@ -9,14 +9,19 @@ Sections of website:
     - Make modular
 (3) Resume
     - make easily uploadable and editable
-(4) Contact 
+(4) Contact
     - Social sites (twitter, linkedin, email)
     - Alberta Canada
 
-Goals: 
+Goals:
 - Have a working website by Sunday August 30th
 - Keep it simple
 
 How:
 - Use css grid, html, and some javscript (leave JS till later)
 - deploy using github
+
+
+Websites i have used:
+for gradient: https://cssgradient.io/
+for particles.js: https://github.com/VincentGarreau/particles.js/

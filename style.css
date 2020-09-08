@@ -1,4 +1,4 @@
-/* Imports all fonts from the Font folder */
+/* Imports all fonts from the Fonts folder */
 @font-face {
   font-family: defaultFont;
   src: url('Fonts/Abel-Regular.ttf');
@@ -6,21 +6,26 @@
 
 /* global variables */
 :root {
-  --introductionheight: 36em;
+  --introductionheight: 38em;
   --mainColor: #00e2fc;
+  --alternateColor: #37393a;
 }
 
-/* Global settings */
+/* Global settings and classes*/
 body{
   margin:0;
   font-family: 'defaultFont';
-  color:black;
+  color:#545758;
 }
 
 div{
   margin:0;
   text-align: center;
   border:0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .mainColor{
@@ -35,14 +40,45 @@ div{
   font-size:30px;
 }
 
+.small {
+  font-size:20px;
+  text-indent: 10%;
+}
+
 .noMargin {
   margin: 0;
+}
+
+.topAndBottomMargin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }
 
 .verticallyCentre {
   display: flex;
   align-items: center;
+}
 
+.rightAlign {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.underline {
+  border-bottom: 1.5px solid var(--mainColor);
+}
+
+.projectImageSize {
+  width: 80%;
+}
+
+.imageMargin {
+  margin: 15%;
 }
 
 /* Header section */
@@ -50,7 +86,7 @@ div{
   height: 20%;
   display:grid;
   grid-template-columns:100%;
-  border-bottom: .1em solid black;
+  border-bottom: .1em solid var(--alternateColor);
 }
 
 #titleheader {
@@ -62,7 +98,7 @@ div{
 /* Introduction section */
 #particles-js{
   /* background gradient made using https://cssgradient.io/ */
-background: linear-gradient(70deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 41%, rgba(0,251,252,0.23042720506171221) 81%, rgba(0,226,252,1) 100%);
+  background: linear-gradient(70deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 41%, rgba(0,251,252,0.23042720506171221) 81%, rgba(0,226,252,1) 100%);
   position: absolute;
   z-index: -10;
   height: var(--introductionheight);
@@ -75,7 +111,6 @@ background: linear-gradient(70deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 4
 }
 
 .introductionText {
-  color: black;
   text-align: right;
   padding: 1em;
   padding-left: 25%;
@@ -89,20 +124,111 @@ background: linear-gradient(70deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 4
   height: var(--introductionheight);
 }
 
-/* References section */
-#references {
-  height: 100px;
+/* navigation section */
+.navigation {
+  height: 450px;
+  border-top: 0.1em solid var(--alternateColor);
+  border-bottom: 0.1em solid var(--alternateColor);
+  display: grid;
+  grid-template-columns: 35% 50%;
+}
+
+#gear {
+  width: 300px;
+  padding-right: 1em;
+}
+
+.navigationText {
+  text-align: left;
+}
+
+.lineBox {
+  height: 15px;
+  background-color: var(--alternateColor);
+  width: 75%;
+}
+
+/* Project section */
+.projectHeader {
+  border-bottom: 3px solid var(--alternateColor);
+  margin-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  width: 20%;
+}
+
+/* general project outline */
+.project {
+  margin: 10%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+
+.projectHeading {
+  text-align: left;
+  font-size: 40px;
+}
+
+.projectInformation {
+  border-left: 4px solid var(--alternateColor);
+  padding-left: 5%;
+}
+
+.projectParagraph {
+  text-align: left;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.iconFormatting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  padding-top: 0;
+}
+
+/* general project outline (reverse) */
+.project2 {
+  margin: 0;
+  margin-right: 10%;
+  margin-left: 10%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
+.projectHeading2 {
+  text-align: right;
+  font-size: 40px;
+}
+
+.projectInformation2 {
+  border-right: 4px solid var(--alternateColor);
+  padding-right: 5%;
+}
+
+.projectParagraph2 {
+  text-align: right;
+}
+
+.icons2 {
+  display: flex;
+  justify-content: flex-end;
 }
 
 
+.resume {
+  height: 700px;
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,251,252,0.23042720506171221) 15%, rgba(0,226,252,1) 100%);
+}
 
-.grid {
-  display:grid;
-  grid-template-columns: 20% 30% 40%;
-}
-.grid > div{
-  background:#eee;
-}
-.grid > div:nth-child(odd){
-  background: #ddd;
+.end {
+  height: 200px;
 }
