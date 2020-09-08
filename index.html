@@ -4,39 +4,28 @@
 <head>
   <meta charset="utf-8">
   <title>Jared's Website</title>
-  <style>
+  <link rel="stylesheet" href="style.css">
 
-    body {
-      margin:0;
-    }
-
-    #header {
-      display:grid;
-      grid-template-columns:100%;
-    }
-    .img {
-      max-width:100%;
-      max-height:100%;
-      margin:0;
-    }
-    .grid {
-      display:grid;
-      grid-template-columns: 20% 30% 40%;
-    }
-    .grid > div{
-      background:#eee;
-      padding:1em;
-    }
-    .grid > div:nth-child(odd){
-      background: #ddd;
-    }
-  </style>
 </head>
 
 <body>
   <div id="header">
-    <img src="Images/profilePicture.jpg" alt="Picture of Jared Schroeder" class="img">
+    <div id="titleheader">Jared Schroeder</div>
+    <!-- <img src="Images/profilePicture.jpg" alt="Picture of Jared Schroeder" class="img"> -->
   </div>
+
+  <!-- Introduction section -->
+  <div>
+    <div id="particles-js"></div>
+    <image src="Images/profilePictureSquare.jpg" id="profile-pic"></image>
+  </div>
+
+  <div id="references">
+    hi
+  </div>
+
+
+  <!-- Reference section -->
   <div class="grid">
     <div>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sapiente deleniti
@@ -57,6 +46,12 @@
       tempore!
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+      particlesJS.load('particles-js', 'assets/particles.json', function() {
+      console.log('callback - particles.js config loaded');
+      });
+  </script>
 </body>
 
 </html>

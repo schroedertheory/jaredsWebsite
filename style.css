@@ -1,0 +1,70 @@
+/* Imports all fonts from the Font folder */
+@font-face {
+  font-family: defaultFont;
+  src: url('Fonts/Abel-Regular.ttf');
+}
+
+/* Global settings */
+body {
+  margin:0;
+  font-family: 'defaultFont';
+}
+
+div{
+  margin:0;
+  text-align: center;
+}
+
+/* Header section */
+#header {
+  height: 20%;
+  display:grid;
+  grid-template-columns:100%;
+  border-bottom: .1em solid black;
+}
+
+#titleheader {
+  font-size: 40px;
+  margin-bottom: .75em;
+  margin-top: .75em;
+}
+
+/* Introduciton section */
+#particles-js{
+  background: linear-gradient(60deg,white,#ddd);
+  /* display: block; */
+  position: absolute;
+  z-index: 0;
+  height: 36em;
+  width: 100%;
+}
+
+#profile-pic {
+  height: 30em;
+  border-radius: 50%;
+  position: absolute;
+}
+
+/* References section */
+#references {
+  margin-top:36em;
+  height: 100px;
+}
+
+
+.img {
+  max-width:100%;
+  max-height:100%;
+  margin:0;
+}
+.grid {
+  display:grid;
+  grid-template-columns: 20% 30% 40%;
+}
+.grid > div{
+  background:#eee;
+  padding:1em;
+}
+.grid > div:nth-child(odd){
+  background: #ddd;
+}
