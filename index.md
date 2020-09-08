@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jared Schroeder</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Images/inverted.png">
+
+</head>
+
+<body>
+  <div id="header">
+    <div id="titleheader">Jared Schroeder</div>
+    <!-- <img src="Images/profilePicture.jpg" alt="Picture of Jared Schroeder" class="img"> -->
+  </div>
+
+  <!-- Introduction section -->
+  <div>
+    <div id="particles-js"></div>
+    <div class="intro-grid">
+      <div class="noMargin verticallyCentre">
+        <p class="introductionText regular noMargin"><span class="large noMargin">Hi,<br/></span>I am a <span class="mainColor">mechanical engineering</span> student at the University of Alberta</p>
+      </div>
+      <div class="verticallyCentre">
+        <image src="Images/profilePictureSquare.jpg" id="profile-pic"></image>
+      </div>
+    </div>
+  </div>
+
+  <!-- website navigation section -->
+  <div class="navigation verticallyCentre">
+    <div class="rightAlign">
+      <img src="Images/gear1.png" alt="" id="gear">
+    </div>
+    <div>
+      <div class="navigationText">
+        <p class="regular topAndBottomMargin">Interested in what I do? Take a look at my <span class="mainColor underline"><a href="#project">projects</a></span></p>
+      </div>
+      <div class="lineBox"></div>
+      <div class="navigationText">
+        <p class="regular topAndBottomMargin">Are you an employeer looking for a hardworking employee? Take a look at my <span class="mainColor underline"><a href="#resume">resume</a></span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- project section header -->
+  <div>
+    <div class="center">
+      <p id="project" class="large projectHeader noMargin">Projects</p>
+    </div>
+  </div>
+
+<!-- project1 -->
+  <div class="project">
+    <div class="projectImage verticallyCentre">
+      <img src="Images/arctos.png" alt="" class="projectImageSize">
+    </div>
+    <div class="projectAbout">
+      <div class="projectHeading noMargin">
+        <p>Autonomous Robotic Vehicle Project</p>
+      </div>
+      <div class="projectInformation">
+        <div class="projectParagraph">
+          <p class="projectText small noMargin">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v
+          eniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo c
+          onsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <p class="projectText regular">Learn more about this project <span class="mainColor underline">here</span></p>
+          <div class="icons">
+            <i class="fas fa-globe-americas large iconFormatting"></i>
+            <i class="fab fa-instagram large iconFormatting"></i>
+            <i class="fab fa-facebook-square iconFormatting large"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- project2 -->
+  <div class="project2">
+    <div class="projectAbout">
+      <div class="projectHeading2 noMargin">
+        <p>Gravity Grappler Video Game</p>
+      </div>
+      <div class="projectInformation2">
+        <div class="projectParagraph2">
+          <p class="projectText small noMargin">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v
+          eniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo c
+          onsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <p class="projectText regular">Learn more about this project <span class="mainColor underline">here</span></p>
+          <div class="icons2">
+            <i class="fas fa-globe-americas large iconFormatting"></i>
+            <i class="fab fa-github large iconFormatting"></i>
+            <i class="fab fa-facebook-square iconFormatting large"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="projectImage verticallyCentre imageMargin">
+      <img src="Images/gear.png" alt="" class="projectImageSize">
+    </div>
+  </div>
+
+<!-- project3 -->
+<div class="project">
+  <div class="projectImage verticallyCentre imageMargin">
+    <img src="Images/coding.jpg" alt="" class="projectImageSize">
+  </div>
+  <div class="projectAbout">
+    <div class="projectHeading noMargin">
+      <p>Some other bing bong project</p>
+    </div>
+    <div class="projectInformation">
+      <div class="projectParagraph">
+        <p class="projectText small noMargin">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v
+        eniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo c
+        onsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p class="projectText regular">Learn more about this project <span class="mainColor underline">here</span></p>
+        <div class="icons">
+          <i class="fas fa-globe-americas large iconFormatting"></i>
+          <i class="fab fa-github large iconFormatting"></i>
+          <i class="fab fa-facebook-square iconFormatting large"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Resume section -->
+<div class="resume">
+  <div class="center">
+    <p id="resume" class="large resumeHeader noMargin">Resume</p>
+  </div>
+  <div class="resumeInformation">
+    <p class="regular topAndBottomMargin">Educations</p>
+    <ul>
+      <li>lorem ipsum</li>
+      <li>lorem ipsum</li>
+      <li>lorem ipsum</li>
+      <li>lorem ipsum</li>
+      <li>lorem ipsum</li>
+    </ul>
+  </div>
+  <div class=downloadResume>
+    <a target="_blank" href="Resume/resumeMay2020.pdf"><button type="button" class="resumeButton">Download my resume as a pdf</button></a>
+  </div>
+</div>
+
+  <div class="end">
+    <pc class="regular">Contact me:</p>
+    <div class="icons">
+      <a href="mailto: jschroed@ualberta.ca"><i class="fas fa-envelope large iconFormatting"></i></a>
+      <a href="https://github.com/schroedertheory" target="_blank"><i class="fab fa-github large iconFormatting"></i></a>
+      <a href="https://www.linkedin.com/in/jared-schroeder-7347b9b7/" target="_blank"><i class="fab fa-linkedin iconFormatting large"></i></a>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  <!-- gets assets for particle js functionality -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+      particlesJS.load('particles-js', 'assets/particles.json', function() {
+      console.log('callback - particles.js config loaded');
+      });
+  </script>
+  <!-- font awesome CDN for icons -->
+  <script src="https://kit.fontawesome.com/394a312f5a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
