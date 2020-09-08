@@ -4,15 +4,45 @@
   src: url('Fonts/Abel-Regular.ttf');
 }
 
+/* global variables */
+:root {
+  --introductionheight: 36em;
+  --mainColor: #00e2fc;
+}
+
 /* Global settings */
-body {
+body{
   margin:0;
   font-family: 'defaultFont';
+  color:black;
 }
 
 div{
   margin:0;
   text-align: center;
+  border:0;
+}
+
+.mainColor{
+  color:var(--mainColor);
+}
+
+.large {
+  font-size: 50px;
+}
+
+.regular {
+  font-size:30px;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.verticallyCentre {
+  display: flex;
+  align-items: center;
+
 }
 
 /* Header section */
@@ -29,41 +59,49 @@ div{
   margin-top: .75em;
 }
 
-/* Introduciton section */
+/* Introduction section */
 #particles-js{
-  background: linear-gradient(60deg,white,#ddd);
-  /* display: block; */
+  /* background gradient made using https://cssgradient.io/ */
+background: linear-gradient(70deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 41%, rgba(0,251,252,0.23042720506171221) 81%, rgba(0,226,252,1) 100%);
   position: absolute;
-  z-index: 0;
-  height: 36em;
+  z-index: -10;
+  height: var(--introductionheight);
   width: 100%;
 }
 
 #profile-pic {
-  height: 30em;
+  height: 25em;
   border-radius: 50%;
-  position: absolute;
+}
+
+.introductionText {
+  color: black;
+  text-align: right;
+  padding: 1em;
+  padding-left: 25%;
+  /* padding-right: 5%;
+  background-color: #ddd; */
+}
+
+.intro-grid {
+  display:grid;
+  grid-template-columns:50% 50%;
+  height: var(--introductionheight);
 }
 
 /* References section */
 #references {
-  margin-top:36em;
   height: 100px;
 }
 
 
-.img {
-  max-width:100%;
-  max-height:100%;
-  margin:0;
-}
+
 .grid {
   display:grid;
   grid-template-columns: 20% 30% 40%;
 }
 .grid > div{
   background:#eee;
-  padding:1em;
 }
 .grid > div:nth-child(odd){
   background: #ddd;
