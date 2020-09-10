@@ -10,28 +10,43 @@
 </head>
 
 <body>
-  <div id="header">
-    <div id="titleheader">Jared Schroeder</div>
-    <!-- <img src="Images/profilePicture.jpg" alt="Picture of Jared Schroeder" class="img"> -->
-  </div>
 
   <!-- Introduction section -->
   <div>
     <div id="particles-js"></div>
+    <div id="header">
+      <div id="titleheader">Jared Schroeder</div>
+    </div>
     <div class="intro-grid">
-      <div class="noMargin verticallyCentre">
-        <p class="introductionText regular noMargin"><span class="large noMargin">Hi,<br/></span>I am a <span class="mainColor">mechanical engineering</span> student at the University of Alberta</p>
+      <div class="noMargin verticallyCentre">\
+        <div>
+          <p class="introductionText regular noMargin"><span class="rightAlign large noMargin">Hi,</span>I am a <span class="mainColor">mechanical engineering</span> student at the University of Alberta</p>
+        </div>
       </div>
       <div class="verticallyCentre">
         <image src="Images/profilePictureSquare.jpg" id="profile-pic"></image>
       </div>
     </div>
+    <div class="navigation verticallyCentre">
+      <div class="rightAlign">
+        <img src="Images/inverted.png" alt="" id="gear">
+      </div>
+      <div>
+        <div class="navigationText">
+          <p class="small topAndBottomMargin">Interested in what I do? Take a look at my <span><a href="#project" class="underlineWhite ">projects</a></span></p>
+        </div>
+        <div class="lineBox"></div>
+        <div class="navigationText">
+          <p class="small topAndBottomMargin">Are you an employeer looking for a hardworking employee? Take a look at my <span><a href="#resume" class="underlineWhite">resume</a></span></p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- website navigation section -->
-  <div class="navigation verticallyCentre">
+  <!-- <div class="navigation verticallyCentre">
     <div class="rightAlign">
-      <img src="Images/gear1.png" alt="" id="gear">
+      <img src="Images/inverted.png" alt="" id="gear">
     </div>
     <div>
       <div class="navigationText">
@@ -42,7 +57,7 @@
         <p class="regular topAndBottomMargin">Are you an employeer looking for a hardworking employee? Take a look at my <span class="mainColor underline"><a href="#resume">resume</a></span></p>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- project section header -->
   <div>
@@ -62,15 +77,15 @@
       </div>
       <div class="projectInformation">
         <div class="projectParagraph">
-          <p class="projectText small noMargin">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          <p class="projectText small noMargin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v
           eniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo c
           onsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
           fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p class="projectText regular">Learn more about this project <span class="mainColor underline">here</span></p>
           <div class="icons">
-            <i class="fas fa-globe-americas large iconFormatting"></i>
+            <i class="fas fa-link large iconFormatting"></i>
             <i class="fab fa-instagram large iconFormatting"></i>
             <i class="fab fa-facebook-square iconFormatting large"></i>
           </div>
@@ -95,7 +110,7 @@
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
           <p class="projectText regular">Learn more about this project <span class="mainColor underline">here</span></p>
           <div class="icons2">
-            <i class="fas fa-globe-americas large iconFormatting"></i>
+            <i class="fas fa-link large iconFormatting"></i>
             <i class="fab fa-github large iconFormatting"></i>
             <i class="fab fa-facebook-square iconFormatting large"></i>
           </div>
@@ -127,7 +142,7 @@
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
         <p class="projectText regular">Learn more about this project <span class="mainColor underline">here</span></p>
         <div class="icons">
-          <i class="fas fa-globe-americas large iconFormatting"></i>
+          <i class="fas fa-link large iconFormatting"></i>
           <i class="fab fa-github large iconFormatting"></i>
           <i class="fab fa-facebook-square iconFormatting large"></i>
         </div>
@@ -136,23 +151,220 @@
   </div>
 </div>
 
-<!-- Resume section -->
+<!-- Resume sections -->
 <div class="resume">
   <div class="center">
     <p id="resume" class="large resumeHeader noMargin">Resume</p>
   </div>
-  <div class="resumeInformation">
-    <p class="regular topAndBottomMargin">Educations</p>
-    <ul>
-      <li>lorem ipsum</li>
-      <li>lorem ipsum</li>
-      <li>lorem ipsum</li>
-      <li>lorem ipsum</li>
-      <li>lorem ipsum</li>
-    </ul>
+
+  <!-- Resume > Education -->
+  <div class="resumeSection">
+    <div>
+      <p class="regular resumeSectionHeader resumeLeftJustify">Educations</p>
+    </div>
+    <div class="resumeSectionHeader"></div>
+
+    <!-- Resume Section 1 -->
+    <div class="">
+      <div class="resumeLeftJustify noMargin">
+        <p class="institutionName"><b>University of Alberta</b></p>
+      </div>
+      <div class="">
+        <div class="resumeLeftJustify">
+          <p class="noMargin">Sep 2018 - Current</p>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="resumeSectionCourse noMargin">
+        <p ><b>Bachelors of Science in Mechanical Engineering</b></p>
+      </div>
+      <div class="">
+        <div class="resumeParagraph">
+          <p class="noMargin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v
+          eniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo c
+          onsequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+          <div class="icons location">
+            <i class="fas fa-map-marker-alt locationFormatting"></i>
+            <span class="rightMargin">Edmonton, Canada</span>
+            <i class="fas fa-link locationFormatting"></i>
+            <span class="rightMargin">ualberta.ca</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resume Section 2 -->
+    <div class="">
+      <div class="resumeLeftJustify noMargin">
+        <p class="institutionName"><b>Sprachinstitut Tuebingen</b></p>
+      </div>
+      <div class="">
+        <div class="resumeLeftJustify">
+          <p class="noMargin">Jul 2016 - Aug 2016</p>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="resumeSectionCourse noMargin">
+        <p ><b>B1.1 German Sprachdiplom</b></p>
+      </div>
+      <div class="">
+        <div class="resumeParagraph">
+          <p class="noMargin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v
+          eniam, quis nostrud exercitation </p>
+          <div class="icons location">
+            <i class="fas fa-map-marker-alt locationFormatting"></i>
+            <span class="rightMargin">Tuebingen, Germany</span>
+            <i class="fas fa-link locationFormatting"></i>
+            <span class="rightMargin">sit-sis.de</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resume Section 3 -->
+    <div class="">
+      <div class="resumeLeftJustify noMargin">
+        <p class="institutionName"><b>SCA Highschool</b></p>
+      </div>
+      <div class="">
+        <div class="resumeLeftJustify">
+          <p class="noMargin">Sep 2013 - Jun 2017</p>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="resumeSectionCourse noMargin">
+        <p ><b>Bachelors of Science in Mechanical Engineering</b></p>
+      </div>
+      <div class="">
+        <div class="resumeParagraph">
+          <p class="noMargin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v
+          eniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo c
+          onsequat. Duis aute irure dolor in reprehenderit in voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Impedit veritatis beatae voluptatibus laborum. Quis repudiandae unde laboriosam quod ut, quas.</p>
+          <div class="icons location">
+            <i class="fas fa-map-marker-alt locationFormatting"></i>
+            <span class="rightMargin">Sherwood Park, Canada</span>
+            <i class="fas fa-link locationFormatting"></i>
+            <span class="rightMargin">scasecondary.ca</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
+
+  <!-- Resume > Experiences -->
+  <div class="resumeSection">
+    <div>
+      <p class="regular resumeSectionHeader resumeLeftJustify">Experiences</p>
+    </div>
+    <div class="resumeSectionHeader"></div>
+
+    <!-- Resume Section 1 -->
+    <div class="">
+      <div class="resumeLeftJustify noMargin">
+        <p class="institutionName"><b>Autonomous Robotic Vehicle Project</b></p>
+      </div>
+      <div class="">
+        <div class="resumeLeftJustify">
+          <p class="noMargin">Oct 2018 - Current</p>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="resumeSectionCourse noMargin">
+        <p ><b>Mechanical Co-lead/Member</b></p>
+      </div>
+      <div class="">
+        <div class="resumeParagraph">
+          <p class="noMargin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v
+          eniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo c
+          onsequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+          <div class="icons location">
+            <i class="fas fa-map-marker-alt locationFormatting"></i>
+            <span class="rightMargin">Edmonton, Canada</span>
+            <i class="fas fa-link locationFormatting"></i>
+            <span class="rightMargin">arvp.org</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resume Section 2 -->
+    <div class="">
+      <div class="resumeLeftJustify noMargin">
+        <p class="institutionName"><b>Arbor Tech Utility Services</b></p>
+      </div>
+      <div class="">
+        <div class="resumeLeftJustify">
+          <p class="noMargin">May 2019 - August 2019</p>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="resumeSectionCourse noMargin">
+        <p ><b>Industrial Pesticide Applicator Foreman</b></p>
+      </div>
+      <div class="">
+        <div class="resumeParagraph">
+          <p class="noMargin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v
+          eniam, quis nostrud exercitation </p>
+          <div class="icons location">
+            <i class="fas fa-map-marker-alt locationFormatting"></i>
+            <span class="rightMargin">Nisku, Canada</span>
+            <i class="fas fa-link locationFormatting"></i>
+            <span class="rightMargin">arbortechservices.ca</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resume Section 3 -->
+    <div class="">
+      <div class="resumeLeftJustify noMargin">
+        <p class="institutionName"><b>Ace Vegetation Services</b></p>
+      </div>
+      <div class="">
+        <div class="resumeLeftJustify">
+          <p class="noMargin">May 2018 - Aug 2018</p>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="resumeSectionCourse noMargin">
+        <p ><b>Industrial Pesticide Applicator</b></p>
+      </div>
+      <div class="">
+        <div class="resumeParagraph">
+          <p class="noMargin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v
+          eniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo c
+          onsequat. Duis aute irure dolor in reprehenderit in voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Impedit veritatis beatae voluptatibus laborum. Quis repudiandae unde laboriosam quod ut, quas.</p>
+          <div class="icons location">
+            <i class="fas fa-map-marker-alt locationFormatting"></i>
+            <span class="rightMargin">Leduc, Canada</span>
+            <i class="fas fa-link locationFormatting"></i>
+            <span class="rightMargin">acevegetation.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
   <div class=downloadResume>
-    <a target="_blank" href="Resume/resumeMay2020.pdf"><button type="button" class="resumeButton">Download my resume as a pdf</button></a>
+    <a target="_blank" href="Resume/resumeMay2020.pdf"><button type="button" class="resumeButton">Download full resume as a PDF</button></a>
   </div>
 </div>
 

@@ -6,3 +6,10 @@
 //           img.style.transform = 'rotate(1deg)';
 //       }
 //    }
+
+document.getElementById("titleheader").addEventListener("scroll", changeHeaderBackground);
+
+function changeHeaderBackground() {
+  document.getElementById("titleheader").style.backgroundColor = "red";
+  console.log('hi');
+}

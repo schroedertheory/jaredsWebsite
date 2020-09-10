@@ -6,16 +6,18 @@
 
 /* global variables */
 :root {
-  --introductionheight: 38em;
+  --introductionheight: 100vh;
   --mainColor: #009bad;
   --alternateColor: #37393a;
+  --whiteColor: #fefefe
 }
 
 /* Global settings and classes*/
 body{
   margin:0;
-  font-family: 'defaultFont';
+  font-family: sans-serif;
   color:#545758;
+  background-color: var(--whiteColor);
 }
 
 div{
@@ -43,7 +45,6 @@ a {
 
 .small {
   font-size:20px;
-  text-indent: 10%;
 }
 
 .noMargin {
@@ -71,7 +72,12 @@ a {
 }
 
 .underline {
-  border-bottom: 1.5px solid var(--mainColor);
+  border-bottom: 2px solid var(--mainColor);
+}
+
+.underlineWhite{
+  border-bottom: 2px solid var(--whiteColor);
+  color: var(--whiteColor);
 }
 
 .projectImageSize {
@@ -82,16 +88,23 @@ a {
   margin: 15%;
 }
 
+.location {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+}
+
 /* Header section */
 #header {
-  height: 20%;
   display:grid;
   grid-template-columns:100%;
   border-bottom: .1em solid var(--alternateColor);
+  position: fixed;
+  width: 100vw;
 }
 
 #titleheader {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: .75em;
   margin-top: .75em;
 }
@@ -99,7 +112,7 @@ a {
 /* Introduction section */
 #particles-js{
   /* background gradient made using https://cssgradient.io/ */
-  background: linear-gradient(45deg, rgba(255,255,255,1) 47%, rgba(110,198,208,1) 84%, rgba(0,155,173,1) 100%);
+  background: linear-gradient(30deg, rgba(254,254,254,1) 58%, rgba(0,155,173,1) 100%);
   position: absolute;
   z-index: -10;
   height: var(--introductionheight);
@@ -127,26 +140,31 @@ a {
 
 /* navigation section */
 .navigation {
-  height: 450px;
-  border-top: 0.1em solid var(--alternateColor);
-  border-bottom: 0.1em solid var(--alternateColor);
+  /* border-top: 0.1em solid var(--alternateColor); */
+  /* border-bottom: 0.1em solid var(--alternateColor); */
+  background-color: var(--alternateColor);
   display: grid;
   grid-template-columns: 35% 50%;
+  color: var(--whiteColor);
+  padding: 40px 0;
 }
 
 #gear {
-  width: 300px;
+  width: 200px;
   padding-right: 1em;
 }
 
 .navigationText {
   text-align: left;
+  line-height: 1.5;
+  padding-right: 20%;
 }
 
 .lineBox {
-  height: 15px;
-  background-color: var(--alternateColor);
+  height: 10px;
+  background-color: var(--whiteColor);
   width: 75%;
+  margin: 20px 0px;
 }
 
 /* Project section */
@@ -224,58 +242,97 @@ a {
   justify-content: flex-end;
 }
 
-/* resume section */
+/* resume heading*/
 .resume {
-  color: #fff;
+  color: #eee;;
   height: auto;
   background: #009bad;
 }
 
 .resumeHeader{
-  border-bottom: 3px solid #fff;
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   padding-top: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   width: 20%;
 }
 
-.resumeInformation{
-  margin-left: 30%;
-  margin-right: 20%;
+/* Resume sections */
+.resumeSection{
+  margin: 10%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-row-gap: 30px;
+}
+
+.resumeSectionHeader {
+  margin: 10px 0px;
+  padding: 5px;
+  background-color: var(--whiteColor);
+  color: var(--mainColor);
+}
+
+.institutionName {
+  font-size: 18px;
+  margin: 14px 0px;
+  padding-right: 25%;
+}
+
+.resumeSectionCourse {
   text-align: left;
+  font-size: 16px;
 }
 
-
-
-
-ul {
-  list-style-position: inside;
-  padding: 0;
+.resumeParagraph {
+  text-align: left;
+  font-size: 16px;
+  padding-right: 25%;
+  margin 0;
 }
 
-ul > li {
-  font-size:20px;
+.location {
+  margin: 10px 0px;
 }
+
+.locationFormatting {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-right: 10px;
+  padding-top: 1px;
+}
+
+.resumeLeftJustify {
+  text-align: left;
+  padding-left: 30%;
+}
+
+.rightMargin {
+  margin-right: 20px;
+}
+
 
 .downloadResume {
   margin-top: 60px;
 }
 
 .resumeButton {
-  background-color: #fff;
+  background-color: var(--whiteColor);
   border: none;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   margin-bottom: 100px;
-  color: #128a97;
+  color: var(--mainColor);
 }
 
 .end {
   height: auto;
-  background-color: #fff;
+  background-color: var(--whiteColor);
   padding: 2%;
   display: flex;
   justify-content: center;
