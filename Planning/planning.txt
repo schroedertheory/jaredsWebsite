@@ -22,6 +22,7 @@ How:
 - deploy using github
 
 
-Websites i have used:
+Websites I have used:
 for gradient: https://cssgradient.io/
 for particles.js: https://github.com/VincentGarreau/particles.js/
+for inspiration: http://www.pascalvangemert.nl/#/experiences

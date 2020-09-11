@@ -31,6 +31,10 @@ a {
   color: var(--mainColor);
 }
 
+p {
+  line-height: 1.3;
+}
+
 .mainColor{
   color:var(--mainColor);
 }
