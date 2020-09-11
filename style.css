@@ -126,6 +126,7 @@ p {
 #profile-pic {
   height: 25em;
   border-radius: 50%;
+  transform: rotate(180deg);
 }
 
 .introductionText {
